@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/item_circulo"
+        android:text="A"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circulo"
+        android:gravity="center"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/item_nombre_comentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_circulo"
+        android:text="nombre"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/item_comentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_circulo"
+        android:layout_below="@id/item_nombre_comentario"
+        android:text="comentario"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/item_circulo"
+        />
+
+</RelativeLayout>

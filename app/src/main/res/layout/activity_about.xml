@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            layout="@layout/barra"
+            android:id="@+id/bar"
+            />
+
+
+
+
+            <ImageView
+                android:layout_marginTop="80dp"
+                android:id="@+id/img1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/chelo"
+                android:layout_below="@id/bar"
+
+               />
+            <TextView
+                android:layout_marginTop="135dp"
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marcelo Valdes"
+                android:gravity="center"
+
+                android:layout_toRightOf="@id/img1"
+                android:layout_below="@id/bar"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estudiante Ing. en Informatica"
+                android:layout_below="@id/txt1"
+                android:layout_toRightOf="@id/img1"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/maxi"
+            android:layout_below="@id/img1"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maximiliano Hidalgo"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/img2"
+            android:layout_below="@id/img1"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudiante Ing. Informatica"
+            android:layout_below="@id/txt3"
+            android:layout_toLeftOf="@id/img2"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

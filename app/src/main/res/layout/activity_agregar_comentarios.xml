@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarComentario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/barra"
+            android:id="@+id/bar"
+            />
+
+        <TextView
+            android:id="@+id/item_nombre_comentario2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:text="Nombre"
+            android:gravity="center_horizontal"
+            android:textSize="28sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_nombre_comentario2"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_comentario_comentario2"
+            android:layout_below="@id/edit_nombre"
+            android:text="Comentario"
+            android:textSize="28sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/edit_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_comentario_comentario2"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="2dp"/>
+
+        <Button
+            android:id="@+id/enviar"
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="48dp"
+            android:onClick="AgregarComentario"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffff"
+            android:backgroundTint="@color/cardview_dark_background"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
